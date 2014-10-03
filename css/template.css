@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#header {
+  background-color: #fff799;
+}
+
+#logo {
+  background-color: #fff799;
+}
+
+#logo span{
+  background: url(../images/logo/logo_cafe.png) no-repeat 0 0;
+}
+
+#gnav {
+  background-color: #fff799;
+}
+#gnav_current_position {
+  background-color: #fff799;
+}
+
+#gnav_imagetext {
+  background-color: #fff799;
+}
+
+
+#contents {
+  width: 900px;
+/*   background-color: #fff799; */
+  background-color: #fff;
+  color: #555;
+  margin: 30px;
+}
+
+
+
+#footer {
+  background-color: #f39700;
+}

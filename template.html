@@ -1,0 +1,271 @@
+<!--
+
+template.html
+
+created by Masafumi Nakao
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Cafe&nbsp;&amp;&nbsp;Bar&nbsp;西洞院｜京都市中京区三条西洞院｜カフェ&nbsp;&amp;&nbsp;バー｜BAR&nbsp;MENU</title>
+
+    <!-- 共通CSSファイルのインクルード -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <!-- main_image用のCSSファイルの読み込みですよ〜 -->
+    <link rel="stylesheet" type="text/css" href="css/unslider.css"/>
+    <!-- 個別CSSファイルのインクルード -->
+    <!-- （個別CSSファイルを作成したら、このコードを有効する）
+    <link rel="stylesheet" type="text/css" href="css/bar_menu.css"/>
+    -->
+
+    <!-- Yuki 07/10/2014
+      main_image内で画像をスライドショーにするために必要なファイルを読み込んでますよ〜。
+      噂のJavaScriptってヤツです(`･ω･´+) ｷﾘｯ
+      jsフォルダの中のファイルとか覗いてもわけ分からんと思うので、
+      とりあえず読み込んでんねんなぁ〜くらいに思っておいてもらって大丈夫だと思います。
+    -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/unslider.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Yuki 07/10/2014
+      とりあえずwebページ全体を囲む領域をつくってます。
+      この中に色々入れていきますよ〜
+    -->
+    <div id="container"> <!-- container Division Start -->
+
+      <!-- Yuki 07/10/2014
+        こっからがヘッダーですよ〜。
+        授業とかだとヘッダーとgnavを別の場所に作ってたと思うけど、
+        今回のwebページだとヘッダーの中にロゴとgnavを配置してます。
+      -->
+      <div id="header"> <!-- header Division Start -->
+
+        <!-- Yuki 07/10/2014
+          まずはロゴです。
+          まぁ、ロゴです。
+          クリックするとトップページに飛ぶように設定してあるんですね。
+          デザインとかガッツリ決まったら書き換えてもらうと思います。
+          なのでとりま触らず放置。
+        -->
+        <h1 id="logo">
+          <a href="./index.html" title="Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー"><span>Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー</span>
+          </a>
+        </h1>
+
+        <!-- Yuki 07/10/2014
+          gnavですよ〜。
+          クリックすると書くページに飛ぶようになってますね。
+          ここも触らなくておk。
+          スルーしちゃってください。
+        -->
+        <div id="gnav"> <!-- gnav Division Start -->
+          <div id="gnav_imagetext"> <!-- gnav Division (All in One Image Text & mouse over) Start -->
+            <ul>
+              <li id="gnav_1_cafe_menu">
+                <a href="cafe_menu.html">CAFE&nbsp;MENU</a>
+              </li>
+              <li id="gnav_2_bar_menu">
+                <a href="bar_menu.html">BAR&nbsp;MENU</a>
+              </li>
+              <li id="gnav_3_reservation">
+                <a href="reservation.html">RESERVATION</a>
+              </li>
+              <li id="gnav_4_aboutus">
+                <a href="about_us.html">ABOUT&nbsp;US</a>
+              </li>
+              <li id="gnav_5_access">
+                <a href="access.html">ACCESS</a>
+              </li>
+              <li id="gnav_6_news">
+                <a href="news.html">NEWS</a>
+              </li>
+              <li id="gnav_7_members">
+                <a href="members.html">MEMBERS</a>
+              </li>
+            </ul>
+          </div> <!-- gnav Division (All in One Image Text & mouse over) End -->
+          <div id="gnav_current_position"> <!-- gnav_current_position Division Start -->
+            <div id="gnav_current_position_2_bar_menu"></div>
+          </div> <!-- gnav_current_position Division End -->
+        </div> <!-- gnav Division End -->
+      </div> <!-- header Division End -->
+
+      <!-- Yuki 07/10/2014
+        さて、メインイメージです。
+        ブラウザでこのwebページを表示させると、画面の真ん中に出てくる部分です。
+        <head>の中で読み込んだJavaScriptと、下の方で読み込んでるJavaScriptとセットになって、
+        画像をスライドショーにして表示してくれます。
+
+        使い方は簡単です。
+        各ページでメインイメージとして使いたい画像を用意して、
+        サーバ上の中尾Dのフォルダの中の
+        develop/images/
+        の中に入れておいてもらって、下のurl('...')の中をそのファイル名に書き換えるだけでおkです。
+
+        ダウンロードしてきた画像ファイルの名前をどういう規則にしたがって命名して
+        develop/images/の中に入れるのかは...明日中尾Dと相談します。
+        
+        いまここでは画像を背景画像として表示させてスライドショーにしています。
+        なので背景画像の上に文字を表示させることができるようになってます。
+        実際、『ここはMAIN_IMAGEの領域...』っていうテキストが画像の上に表示されてるはずです。
+        もし画像だけを表示させたいときは、<p>から</p>まで全部消しちゃってください。
+        逆に画像の上に文字を表示させたいときは<p>の中の文言を書き換えるとおkです。
+        で、そのときのレイアウトは個別cssファイルの方に書いてもらうことになると思います。
+      -->
+      <div id="main_image"> <!-- main_image Division Start -->
+        <ul>
+          <li style="background-image: url('images/1.jpg');">
+            <p>ここは、MAIN_IMAGE の領域（ACCESSのページです）</p>
+          </li>
+          <li style="background-image: url('images/2.jpg');">
+            <p>ここは、MAIN_IMAGE の領域（２枚目の画像です）</p>
+          </li>
+          <li style="background-image: url('images/3.jpg');">
+            <p>ここは、MAIN_IMAGE の領域（３枚目の画像です）</p>
+          </li>
+          <li style="background-image: url('images/4.jpg');">
+            <p>ここは、MAIN_IMAGE の領域（４枚目の画像です）</p>
+          </li>
+        </ul>
+      </div> <!-- main_image Division End -->
+
+      <!--
+        コンテンツのパートです。
+        本丸です。
+        ここにメニューを書いたりします。
+        とりあえずどんな感じにどんなテキストを配置したいのかというデザインを考える方が先かなぁと思ってます。
+        それさえあればあとはどんな感じでhtmlを書いてcssを書けばいいかを僕やDが相談に乗ると思うので。
+      -->
+      <div id="contents"> <!-- contents Division Start -->
+
+        <div class="top_contents"> <!-- top_contents Division Start -->
+          <p class="title">ここはup contentsです</p>
+          <p class="text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+        </div> <!-- top_contents Division End -->
+
+        <div class="bottom_contents"> <!-- bottom_contents Division Start -->
+          <p class="title">ここはunder contentsです</p>
+          <p class="text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+        </div> <!-- bottom_contents Division End -->
+
+      </div> <!-- contents Division End -->
+
+      <!--
+        フッターですよ、フッター！
+        Copyright的なことを書いたりします。
+        フッターに何書くとか、そのデザインをどうするかとかが決まったら
+        一括して書き換えてもらうと思います。
+        なのでとりま触らなくて良いと思います。
+      -->
+      <div id="footer"> <!-- fotter Division Start -->
+        <p>
+          ここは、FOOTER の領域<br />
+          Copyright (C) Cafe&nbsp;&amp;&nbsp;Bar&nbsp;西洞院 All Rights Reserved.
+        </p>
+      </div> <!-- fotter Division End -->
+    </div> <!-- container Division End -->
+  
+    <!-- Yuki 07/10/2014
+      ここでもmain_image内で画像をスライドショーにするのに必要なファイルを読み込んでます。
+      画像１枚あたり何秒表示させるとか、次の画像に切り替えるのに何秒かけるかとか、そういう
+      設定をここでしてます。
+      今は画像１枚あたり３秒表示させて、0.5秒で次の画像に切り替わるようにしてあります。
+      １枚あたりの表示時間をもうちょっと長くして〜とか要望があれば言ってください。
+      くれぐれもunslider.triger.jsを自分で書き換えたりしないでね(^_<)
+    -->
+    <script src="js/unslider.trigger.js"></script>
+  
+  </body>
+
+</html>
+
+<!-- Yuki 07/10/2014
+
+htmlファイルを直接見るハードルを少しでも下げるコツ？みたいなことを書いておきます。
+
+基本的にhtmlは
+
+<!DOCTYPE html>
+<html>
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+
+みたいに、まずオマジナイの一文があって、次に<html>、次に<head>、でなんやらかんやら書いてあって
+</head>でheadタグを閉じて、次に<body>、でなんやらかんやら書いて</body>でbodyタグを閉じる、
+で最後に</html>でhtmlタグを閉じる、っていう構造になってます。
+
+ここで大事なのは『一番外側にhtml要素、その一段階内側にhead要素とbody要素』って感じになってることです。
+で、div要素やらp要素やらimg要素やら何やらかんやらはすべてbody要素の中（body要素の下の階層）にくることになります。
+視覚的に表すと（今現在のこのhtmlファイルの場合は）
+
+                            <html>
+                              |
+                 _____________|_____________
+                 |                         |
+                 |                         |
+               <head>                    <body>
+                 |                         |
+  (この下はまぁ気にしなくて良いです)             |
+                                      <container>
+                                           |
+                ___________________________|____________________________________________
+                |                       |                         |                    |
+                |                       |                         |                    |
+        <div id="header">      <div id="main_image">     <div id="contents">   <div id="footer">               
+                |                       |                         |                    |
+            ____|_________              |                      (以下省略）               |
+            |            |              |                                             <p>
+            |            |              |
+          <logo>   <gnav_imagetext>     |
+            |            |              |
+            |            |              |
+        (以下省略）    (以下省略）          |
+                                        |
+                          ______________|_______________
+                          |        |         |         | 
+                          |        |         |         |
+                         <li>     <li>      <li>      <li>
+                          |        |         |         |
+                          |        |         |         |
+                         <p>      <p>       <p>       <p>
+                    
+こんな感じです。
+
+この階層っていうのを意識しておくと、htmlやらcssのコードを直接見るっていうハードルが若干下がったりします。
+なんかわけの分からない文字の羅列って感じから、
+各要素がツリー構造をもってるんだっていう見方にそのうちなってくるんじゃないかなぁと。
+
+そのときに大事なのが『インデント（行頭のスペース）』と『空白行』だったりします。
+このツリー構造で一つの階層を下がるたびにインデントを入れておくと、自分が今どの階層にいるか見失いにくくなったりします。
+あと、こうすることで例えばほんとうなら</div>を書くべきところに</p>って書いたりするような間違いを犯しにくくなったりします。
+なので意識的にインデントを入れるっていうのは、コードに少しずつ慣れるためや、
+間違ったコードを書かないようにするために良いかなぁと思ってます。
+このhtmlファイルではタグの階層が１段階深くなるたびに2スペース入れるようにしておきました。
+
+空白行はまとまりごとに入れると良いと思います。
+空白行を入れると、例えばhtmlファイルの中のどこからどこまでがheaderに対応するのかがある程度視覚的に分かりやすくなったりします。
+
+多分Dreamweaverで操作してwebページをつくっていくと、Dreamweaverはそういうインデントとか空白行とかを
+あんまりまともに入れてくれなかったりすると思うので、たまにコード画面でインデントがちゃんと入ってるかとか
+適度に空白行が挟んであるかをチェックして、整形すると良いかもです。
+
+とりあえず退屈な話はこれまで。
+てことでがんばっていきましょうヾ(`･ω･´)ﾉ
+
+-->

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#logo span {
+  background: url(../images/logo/logo_cafe.png) no-repeat 0 0;
+}
+
+#gnav_imagetext li a {
+  background-image: url(../images/gnav/gnav_all_cafe.png);
+}
+
+#gnav_imagetext a:hover {
+  background-image: url(../images/gnav/gnav_all_cafe.png);
+}
+
+/*
+#main_image {
+  background-image: url(../images/main/cafe_main_image.jpg);
+}
+*/
+
+#contents {
+	width: 900px;
+	margin-top: 30px;
+	margin-right: 30px;
+	margin-left: 30px;
+	padding-bottom: 30px;
+	background-color: #fff799;
+}
+
+#top_contents {
+	width: 900px;
+	overflow: hidden;
+}
+
+ul.menuPhoto-gallery {
+	height: 170px;
+	width: 900px;
+}
+
+ul.menuPhoto-gallery li {
+    float: left;
+    height: 170px;
+    margin: 0 0 0 12px;
+    width: 216px;
+    list-style-type: none;
+}
+
+ul.menuPhoto-gallery li.menuPhoto-gallary-left {
+	margin: 0;
+}
+
+ul.menuPhoto-gallery li img {
+   width: 216px;
+   height: 170px;
+}
+
+#middle_contents {
+	width: 900px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+#menulist_lunch_set {
+	font-size: 16px;
+	margin-left: 20px;
+}
+
+#menulist_lunch_set ul {
+	position: relative;
+	float: left;
+	width: 400px;
+}
+
+#menulist_lunch_set ul li {
+	list-style-type: none;
+}
+
+#menulist_lunch_set ul li.small_font {
+	font-size: 11px;
+}
+
+dl.menulist_set  {
+	margin-top: 60px;
+	width: 900px;
+}
+
+dl.menulist_set dt  {
+	clear: both;
+	font-size: 14px;
+	width: 250px;
+	float: left;
+}
+
+dl.menulist_set dd  {
+	width: 600px;
+	margin-left: 250px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	font-size: 14px;
+}
+
+#bottom_contents {
+	width: 900px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+#menulist_Drink {
+	float: left;
+	width: 430px;
+	margin-left: 20px;
+	font-size: 15px;
+}
+
+#menulist_Dessert {
+	float: left;
+	width: 430px;
+	margin-left: 20px;
+	font-size: 15px;
+}
+
+dl.menulist dt {
+	width: 300px;
+	clear: both;
+	float: left;
+}
+
+dl.menulist dd {
+	width: 40px;
+	margin-left: 300px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+#footer {
+	background-color: #f39700;
+}

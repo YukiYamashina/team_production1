@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <style type="text/css">
+      dl {
+        background-color : #fff;
+        line-height : 1;
+        padding-top : 10px;
+        padding-left : 10px;
+        padding-right : 10px;
+        padding-bottom : 10px;
+        width : 100%;
+        overflow : auto;
+      }
+      
+      dt {
+        float : left;
+        clear : both;
+        border-bottom-width : 4px;
+        border-bottom-style : solid;
+        border-bottom-color : #999999;
+        padding-top : 17px;
+        padding-bottom : 3px;
+        font-weight: bold;
+      }
+      dd {
+        border-bottom-width : 1px;
+        border-bottom-style : solid;
+        border-bottom-color : #999999;    
+        margin-left : 7em;
+        padding-top : 17px;
+        padding-bottom : 3px;
+        padding-left : 1em;
+        margin-right: 3%;
+        line-height: 150%;
+      }
+      
+      .nakagawa {
+        color: #c0392b;
+      }
+	  
+	  .nakawo {
+        color: #000080;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>変更箇所</h1>
+
+    <h2>07/12/2014</h2>
+    <dl>
+      <dt class="nakagawa">14:30-14:36</dt>
+      <dd>
+        変更履歴のページを追加（トップページから『change』って打つと変更履歴ページに飛ぶよ）
+      </dd>
+      <dt class="nakagawa">15:00-16:50</dt>
+      <dd>
+        各html内で前回書いていた余分なコメント文を削除、タブと全角スペースがあったので半角スペースに置換
+      </dd>
+      <dd>
+        cafe_menu.htmlでインデント挿入によるコード整形
+      </dd>
+      <dd>
+        cafe_menu.htmlでmenuPhoto-galleryの中のimg要素でwidthとheightを指定していたのをcssに移動
+      </dd>
+      <dd>
+        imagesフォルダ内を整理（各ページの名前をもつサブフォルダを作ってファイルを移動）
+      </dd>
+      <dd>
+        imagesフォルダの整理に伴い、about_us.html内での画像のsrc先を変更
+      </dd>
+      <dd>
+        imagesフォルダの整理に伴い、gnav関連ファイルを移動したのでcommon.cssを修正
+      </dd>
+    </dl>
+
+
+    <h2>07/13/2014</h2>
+    <dl>
+      <dt class="nakagawa">11:00-16:00</dt>
+      <dd>
+        CAFEページに入った後はBARページ以外でのヘッダー背景が#fff799に、<br>
+        BARページに入った後はCAFEページ以外でのヘッダー背景が#000（変更予定？）に固定されるように変更<br>
+        フッター背景も同様。<br>
+      </dd>
+      <dt class="nakagawa">16:00-16:05</dt>
+      <dd>
+        cssファイルでの//のコメントアウトは効かないみたいなので/*...*/に変更
+      </dd>
+      <dt class="nakagawa">18:30-19:00</dt>
+      <dd>
+        ヘッダー背景とフッター背景に加えてロゴもそれぞれのバージョンに固定されるように変更
+      </dd>
+      <dt class="nakagawa">19:30-</dt>
+      <dd>
+        どうしてもトップページだけ浮くのが気に食わない...やっぱり統一するべき、うん。<br>
+        その前でなんか遊びたいな
+      </dd>
+    </dl>
+
+    <h2>07/14/2014</h2>
+    <dl>
+      <dt class="nakagawa">11:00-11:10</dt>
+      <dd>
+        トップページを全画面スライドショーから他のページと同じレイアウトに変更。<br>
+        コンテンツの調整はハロワ行って帰ってきてから夜にでも。<br>
+        エンドロールはtwitterのリンク先に仕込んであります。<br>
+      </dd>
+
+      <dt class="nakagawa">帰ってから</dt>
+      <dd>
+        できればトップページを表示する数秒前になんか仕込みたい。<br>
+        今考えてるのはimages/logo/logo_top.pngを画面でふわっ〜って動かしてトップページがフェードインで表示される感じ。<br>
+        そんなのできるの？<br>
+      </dd>
+      
+      <dt class="nakawo">22:30-23:00</dt>
+      <dd>
+        やっと作業してます。。。orz<br>
+        MEMBERページ更新しました。<br>
+        更新ファイル：<br>
+        members.html<br>
+        css/members.css<br>
+      </dd>  
+    </dl>
+
+    <h2>07/15/2014</h2>
+    <dl>      
+      <dt class="nakawo">00:30-01:00</dt>
+      <dd>
+        ABOUT USページに、お問合せページ（contact.html）へのリンクを追加。<br>
+        contact.html ページはまだっす。m(_ _)m<br>
+        更新ファイル：<br>
+        about_us.html<br>
+        css/about_us.css<br>
+      </dd>  
+      <dt class="nakawo">08:30-09:00</dt>
+      <dd>
+        ABOUT US、ACCESS、RESERVATION、MEMBERSページの文字色を #000 から #555 に変更。<br>
+        見た目に優しくなったかも。<br>
+        更新ファイル：<br>
+        css/about_us.css<br>
+        css/access.css<br>
+        css/reservation.css<br>
+        css/members.css<br>
+      </dd>
+      <dt class="nakawo">11:10-11:15</dt>
+      <dd>
+        TOPページの文字色を #000 から #555 に変更。<br>
+        更新ファイル：<br>
+        css/index.css<br>
+      </dd>
+      <dt class="nakawo">11:10-12:20</dt>
+      <dd>
+        CONTACTページの新規追加。<br>
+        修正ファイル：<br>
+        contact.html<br>
+        css/contact.css<br>
+      </dd>
+      <dt class="nakawo">15:15-15:20</dt>
+      <dd>
+        Title と fotter の文言変更（その1）。<br>
+        修正ファイル：<br>
+        access.html<br>
+        contact.html<br>
+        members.html<br>
+        news.html<br>
+        reservation.html<br>
+      </dd>
+    </dl>
+
+    <h2>07/16/2014</h2>
+    <dl>      
+      <dt class="nakagawa">05:00-05:10</dt>
+      <dd>
+        #header,#logo,#logo span,#gnav,#gnav_current_position,#gnav_imagetext,#footerの
+        background-colorはすべてchange_bg_color.jsで制御するため、各ページのcssから該当部分を削除。
+      </dd>  
+      <dt class="nakagawa">05:10-07:10</dt>
+      <dd>
+        gnavを文字間が等間隔ヴァージョンに変更。cafe用のgnavファイルを作ってもらうこと！<br>
+        current_positionは未修整<br>
+        ロゴを更新。<br>
+        修正ファイル：<br>
+        common.css, cafe_menu.css, bar_menu.css, change_bg_color.js
+      </dd>
+    </dl>
+
+    <h2>07/17/2014</h2>
+    <dl>
+      <dt class="nakawo">12:20-12:35</dt>
+      <dd>
+        index.htmlのタイトル文言を修正<br>
+        修正ファイル：<br>
+        index.html
+      </dd>  
+      <dt class="nakagawa">16:00-22:40</dt>
+      <dd>
+        firefoxやDWのデザインビューでmain_imageがズレて表示されたのは
+        div#headerにfloat:left;が設定されてたのが原因だったのでcommon.cssを修正。<br>
+        index.htmlとtop.html以外は、main_imageが1枚絵なのでdivのbackground-imageに変更、
+        スライドショーに使ってたJSの読み込みを削除。<br>
+        float: left;で親ボックスの高さがゼロになる問題は、親要素にoverflow: hidden;を設定することで解決できたので、
+        CAFE MENU、BAR MENU、RESERVATION、ACCESSの各ページで該当箇所を修正。
+        firefoxのインスペクタでうまくいってることを確認済み。<br>
+        Dreamweaverのデザインビューでfloat: left;が効いてないように見えるのはソフトの問題らしいので無視。<br>
+        各ページにmetaタグをさらに追加。<br>
+        footerにおばけのロゴをindex.htmlを除く各ページに追加。クリックでindex.htmlに飛びます。<br>
+        修正ファイル：<br>
+        change_bg_color.js, common.css<br>
+        cafe_menu.html, cafe_menu.css, bar_menu.html, bar_menu.css<br>
+        reservation.html, reservation.css, about_us.html, about_us.css<br>
+        access.html, access.css, news.html, news.css, members.html, members.css, contact.html, contact.css
+      </dd>  
+      <dt class="nakagawa">23:00-23:30</dt>
+      <dd>
+        index.htmlの仕上げ中...あとエンドロールでなぜか４人までしか表示されなくなってる...
+      </dd>  
+      <dt class="nakagawa">25:40-26:30</dt>
+      <dd>
+        全ページにAAを仕込んで終了。
+      </dd>  
+    </dl>
+
+  </body>
+
+</html>

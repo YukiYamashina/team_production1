@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+#main_image {
+  background-image: url(../images/main/reservation_image.jpg);
+}
+*/
+
+#contents {
+	background: #fff;
+}
+
+#contents_reservation {
+	margin: 30px 30px 30px 30px;
+	padding: 0;
+	width: 900px;
+	background: #fff;
+}
+
+#title {
+	width: 900px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	background: #fff;
+	color: #555;
+}
+
+#detail {
+	width: 900px;
+/* 	height: 500px */
+	padding: 0;
+	margin: 10px 0 0 0;
+	position: relative;
+	background: #fff;
+	color: #555;
+	overflow: hidden;
+}
+
+#message {
+	width: 400px;
+/* 	height: 50px; */
+	padding: 0;
+	margin: 0;
+	float: left;
+	position: relative;
+	background: #fff;
+	color: #555;
+}
+
+#calender {
+	width: 500px;
+/* 	height: 500px; */
+	padding: 0;
+	margin: 0;
+	float: left;
+	position: relative;
+	background: #fff;
+	color: #555;
+}

@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#logo span {
+  background: url(../images/logo/logo_bar.png) no-repeat 0 0;
+}
+
+#gnav_imagetext li a {
+  background-image: url(../images/gnav/gnav_all_bar.png);
+}
+
+#gnav_imagetext a:hover {
+  background-image: url(../images/gnav/gnav_all_bar.png);
+}
+
+/*
+#main_image {
+  background-image: url(../images/main/bar_main_image.jpg);
+}
+*/
+
+#contents{
+	clear: both;
+	width: 900px;
+	background-color: #707B7F;
+  margin: 30px 30px 0 30px;
+}
+
+#top_contents{
+	width: 900px;
+}
+
+#bottom_contents{
+	width: 900px;
+}
+
+
+ul.menuPhoto-gallery {
+  height: 170px;
+  width: 900px;
+}
+ul.menuPhoto-gallery li {
+    float: left;
+    height: 170px;
+    margin: 0 0 0 12px;
+    width: 216px;
+    list-style-type: none;
+}
+
+ul.menuPhoto-gallery li.menuPhoto-gallary-left {
+  margin: 0;
+}
+
+ul.menuPhoto-gallery li img {
+   width: 216px;
+   height: 170px;
+}
+
+#menu_first_column,
+#menu_second_column,
+#menu_third_column,
+#menu_fourth_column {
+  width: 900px;
+  overflow: hidden;
+}
+
+#menulist_salad {
+	float: left;
+	width: 430px;
+	margin: 30px 0 0 20px;
+}
+
+#menulist_pasta {
+	float: left;
+	width: 430px;
+	margin: 30px 0 0 20px;
+}
+
+#menulist_pizza {
+	float: left;
+	width: 430px;
+	margin-top: 30px;
+  margin-left: 20px;
+}
+
+#menulist_alacarte {
+	float: left;
+	width: 430px;
+	margin-top: 30px;
+  margin-left: 20px;
+}
+
+#menulist_dessert {
+	float: left;
+	width: 430px;
+	margin-top: 30px;
+	margin-left: 470px;
+}
+
+#menulist_drink_left {
+	float: left;
+	width: 430px;
+	margin-top: 30px;
+  margin-left: 20px;
+}
+
+#menulist_drink_right_top {
+	float: left;
+	width: 430px;
+	margin-top: 50px;
+  margin-left: 20px;
+}
+
+#menulist_drink_right_bottom {
+	float: left;
+	width: 430px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+dl {
+  width: 450px;
+}
+
+dt {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 300px;
+  clear: both;
+  float: left;
+  line-height: 70%;
+}
+
+dd {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 60px;
+  margin-left: 300px;
+  line-height: 70%;
+}
+
+#menulist_pizza dd.second_column_dl {
+	width: 100px;
+}
+
+#menulist_pizza dd.menulist_pizza_piece {
+  width: 100px;
+  margin-top: -60px;
+  margin-left: 320px;
+}
+
+#menulist_pizza dd.menulist_pizza_price {
+  width: 100px;
+  margin-left: 320px;
+}
+
+#menulist_pizza dt {
+  width: 200px;
+}
+#menulist_pizza dd {
+  margin-left: 200px;
+}
+
+#menulist_drink_right_bottom dt {
+  width: 180px;
+}
+
+#menulist_drink_right_bottom dd {
+  width: 240px;
+  margin-left: 180px;
+}
+
+#menulist_drink_right_bottom dd.sangria {
+  width: 240px;
+  margin-left: 240px;
+}
+
+
+#footer {
+  background-color: #835b5b;
+}

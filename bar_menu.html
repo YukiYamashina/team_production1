@@ -1,0 +1,277 @@
+<!--
+
+file name : bar_menu.html
+
+author    : Yuka Yamauchi
+
+template  : Masafumi Nakao
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    
+    <meta name="Keywords" content="bar,cafe" />
+    <meta name="Description" content="京都の繁華街とは思えない猫の隠れ家Cafe & Bar EVE。
+    昼はCafeスタイル（11:00－15:00）、夜はBarスタイル（18:00－23:00）で、気ままに営業しています。" />
+    <title>Cafe&nbsp;&amp;&nbsp;Bar&nbsp;西洞院｜京都市中京区三条西洞院｜カフェ&nbsp;&amp;&nbsp;バー｜BAR&nbsp;MENU</title>
+
+    <!-- 共通CSSファイルのインクルード -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <!-- 個別CSSファイルのインクルード -->
+    <link rel="stylesheet" type="text/css" href="css/bar_menu.css"/>
+    <!-- main_imageのスライドショー用CSSファイルの読み込み -->
+    <link rel="stylesheet" type="text/css" href="css/unslider.css"/>
+
+    <!-- main_image内のスライドショー用JavaScriptの読み込み -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/unslider.min.js"></script>
+
+    <!-- headerとfooterの背景色を変更 -->
+    <script src="js/change_bg_color.js"></script>
+    <script>
+      var bgFlag = 1;
+      $(document).ready(function(){
+        setCookie();
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <div id="header">
+
+        <h1 id="logo" class="header-color-bar">
+          <a href="top.html" title="Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー">
+            <span>Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー</span>
+          </a>
+        </h1>
+
+        <div id="gnav" class="header-color-bar">
+          <div id="gnav_imagetext" class="header-color-bar">
+            <ul>
+              <li id="gnav_1_cafe_menu"><a href="cafe_menu.html">CAFE&nbsp;MENU</a></li>
+              <li id="gnav_2_bar_menu"><a href="bar_menu.html">BAR&nbsp;MENU</a></li>
+              <li id="gnav_3_reservation"><a href="reservation.html">RESERVATION</a></li>
+              <li id="gnav_4_aboutus"><a href="about_us.html">ABOUT&nbsp;US</a></li>
+              <li id="gnav_5_access"><a href="access.html">ACCESS</a></li>
+              <li id="gnav_6_news"><a href="news.html">NEWS</a></li>
+              <li id="gnav_7_members"><a href="members.html">MEMBERS</a></li>
+            </ul>
+          </div>
+
+          <div id="gnav_current_position" class="header-color-bar">
+            <div id="gnav_current_position_2_bar_menu"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="main_image_slideshow"> <!-- main_image Division Start -->
+        <ul>
+          <li style="background-image: url('images/main/bar_main_image.jpg');"></li>
+        </ul>
+      </div> <!-- main_image Division End -->
+
+      <div id="contents">
+
+        <div id="top_contents">
+
+          <h2 class="title">
+            <p>
+              <img src="images/bar_images/DINNER_menu_03.jpg" width="301" height="49" alt="ランチメニュー" />
+            </p>
+          </h2>
+
+          <ul class="menuPhoto-gallery clearfix">
+            <li class="menuPhoto-gallary-left"><img src="images/bar_images/DINNER_photo_05.jpg" alt="パスタ" /></li>
+            <li><img src="images/bar_images/DINNER_photo_07.jpg" alt="ラザニア" /></li>
+            <li><img src="images/bar_images/DINNER_photo_09.jpg" alt="チキン" /></li>
+            <li><img src="images/bar_images/DINNER_photo_11.jpg" alt="デザート" /></li>
+          </ul>
+          
+        </div>
+
+        <div class="bottom_contents">
+
+          <div id="menu_first_column">
+
+            <div id="menulist_salad">
+              <h3>
+                <img src="images/bar_images/DINNER_menu_07.jpg" />
+              </h3>
+              <dl>
+                <dt>イカとツナのサラダ</dt>
+                <dd>820yen</dd>
+                <dt>シーザーサラダ</dt>
+                <dd>820yen</dd>
+                <dt>生ハムサラダ</dt>
+                <dd>920yen</dd>
+              </dl>
+            </div>
+
+            <div id="menulist_pasta">
+              <h3>
+                <img src="images/bar_images/DINNER_menu_09.jpg" />
+              </h3>
+              <dl>
+                <dt>濃厚チーズのカルボナーラ</dt>
+                <dd>920yen</dd>
+                <dt>キャベツとアンチョビのペペロンチーノ</dt>
+                <dd>920yen</dd>
+                <dt>ニンニクとトマトソース</dt>
+                <dd>920yen</dd>
+                <dt>チキンバジル</dt>
+                <dd>970yen</dd>
+                <dt>シーフードトマトクリーム</dt>
+                <dd>970yen</dd>
+              </dl>
+            </div>
+
+          </div>
+
+          <div id="menu_second_column">
+
+            <div id="menulist_pizza">
+              <h3>
+                <img src="images/bar_images/DINNER_menu_16.jpg" />
+              </h3>
+              <dl>
+                <dt>バケットピザ  チーズ　　+</dt>
+                <dd class="second_column_dl">トマト</dd>
+                <dd class="second_column_dl">バジル</dd>
+                <dd class="second_column_dl">オニオン</dd>
+                <dd class="second_column_dl">ガーリック</dd>
+                <dd class="second_column_dl">オリーブ</dd>
+                <dd class="second_column_dl">サラミ</dd>
+                <dd class="second_column_dl">ミート</dd>
+                <dd class="menulist_pizza_piece">piece</dd>
+                <dd class="menulist_pizza_price">420yen</dd>
+              </dl>
+            </div>
+
+            <div id="menulist_alacarte">
+              <h3>
+                <img src="images/bar_images/DINNER_menu_14.jpg" />
+              </h3>
+              <dl>
+                <dt>オリーブ</dt>
+                <dd>280yen</dd>
+                <dt>ポテト</dt>
+                <dd>550yen</dd>
+                <dt>カプレーゼ</dt>
+                <dd>550yen</dd>
+              </dl>
+            </div>
+
+          </div>
+
+          <div id="menu_third_column">
+
+            <div id="menulist_dessert">
+              <h3>
+                <img src="images/bar_images/DINNER_menu_36.jpg" />
+              </h3>
+              <dl>
+                <dt>生チョコオレンジタルト</dt>
+                <dd>650yen</dd>
+                <dt>ピーチタルト</dt>
+                <dd>650yen</dd>
+              </dl>
+            </div>
+
+          </div>
+
+          <div id="menu_fourth_column">
+
+            <div id="menulist_drink_left">
+              <h3>
+                <img src="images/bar_images/DINNER_menu_39.jpg" />
+              </h3>
+              <dl>
+                <dt>コーヒー（HOT・ICE）</dt>
+                <dd>450yen</dd>
+                <dt>紅茶（HOT・ICE）</dt>
+                <dd>450yen</dd>
+                <dt>ブラットオレンジ</dt>
+                <dd>450yen</dd>
+                <dt>アップルジュース</dt>
+                <dd>450yen</dd>
+                <dt>ジンジャエール（甘・辛）</dt>
+                <dd>450yen</dd>
+                <dt></dt>
+                <dd></dd>
+                <dt>Red Bull</dt>
+                <dd>500yen</dd>
+              </dl>
+            </div>
+
+            <div id="menulist_drink_right_top">
+              <dl>
+                <dt>コロナ</dt>
+                <dd>700yen</dd>
+                <dt>ジーマ</dt>
+                <dd>700yen</dd>
+              </dl>
+            </div>
+
+            <div id="menulist_drink_right_bottom">
+              <h3>&nbsp;</h3>
+              <dl>
+                <dt>ワイン　白</dt>
+                <dd>フラスカティ カンネリーノ</dd>
+                <dt>　　　　赤</dt>
+                <dd>ピノ・ノワール・シレーニ</dd>
+                <dt>スパークリング</dt>
+                <dd>アスティ・スプマンテ</dt>
+                <dd>　　　bottle　　3,000yen </dd>
+                <dt></dt>
+                <dd></dd>
+                <dt>オリジナル サングリア</dt>
+                <dd class="sangria">白×ピーチ</dd>
+                <dd class="sangria">白×マンゴー</dd>
+                <dd class="sangria">赤×オレンジ</dd>
+                <dd class="sangria">赤×いちご</dd>
+                <dd>　　　glass　 　  650yen </dd>
+              </dl>
+            </div>
+
+           </div>
+
+        </div>
+
+      </div>
+
+      <div id="footer" class="footer-color-bar">
+        <h2 id="footer_logo" class="footer-color-bar">
+          <a href="index.html" title="Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー">
+            <span>Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー</span>
+          </a>
+        </h2>
+        <p>CAFE & BAR EVE<br />
+          京都市中京区西洞院通三条下る柳水町61<br />
+          075-111-2222<br />
+          Copyright (C) Cafe&nbsp;&amp;&nbsp;Bar&nbsp;EVE All Rights Reserved.<br />
+        </p>
+      </div>
+
+    </div>
+  
+    <!-- main_imageでのスライドショーのtrigger scriptの読み込み -->
+    <script src="js/unslider.trigger.js"></script>
+
+  </body>
+
+</html>

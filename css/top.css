@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#header {
+  background-color: #fff799;
+}
+
+#logo {
+  background-color: #fff799;
+}
+
+#logo span{
+  background: url(../images/logo/logo_cafe.png) no-repeat 0 0;
+}
+
+#gnav {
+  background-color: #fff799;
+}
+#gnav_current_position {
+  background-color: #fff799;
+}
+
+#gnav_imagetext {
+  background-color: #fff799;
+}
+
+
+#contents {
+  width: 900px;
+/*   background-color: #fff799; */
+  background-color: #fff;
+  color: #555;
+  margin: 30px;
+}
+
+#contents:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#left-contents {
+  width: 510px;
+  float: left;
+  margin: 20px;
+}
+
+#left-contents-cafemenu {
+  margin: 0;
+  padding-left: 10px;
+  width: 245px;
+  float: left;
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+#left-contents-barmenu {
+  margin-left: 0;
+  padding-left: 10px;
+  width: 245px;
+  float: left;
+  padding-bottom: 20px;
+  font-size: 12px
+}
+
+#right-contents {
+  width: 310px;
+  float: left;
+  margin: 20px;
+}
+
+#top-news {
+  margin-top: 10px;
+}
+
+#twitter {
+  margin-top: 10px;  
+}
+
+dl{
+/*   background-color : #ebebd8; */
+  line-height : 1;
+  padding-top : 10px;
+  padding-left : 10px;
+  padding-right : 10px;
+  padding-bottom : 10px;
+  width : 500px;
+  height : 120px;
+  overflow : auto;
+}
+
+dt{
+  float : left;
+  clear : both;
+  width : 200px;
+/*
+  border-bottom-width : 1px;
+  border-bottom-style : dotted;
+  border-bottom-color : #999999;
+*/
+  padding-top : 17px;
+  padding-bottom : 3px;
+}
+
+dd{
+/*
+  border-bottom-width : 1px;
+  border-bottom-style : dotted;
+  border-bottom-color : #999999;    
+*/
+  margin-left : 100px;
+  padding-top : 17px;
+  padding-bottom : 3px;
+  padding-left : 1em;
+}
+
+h2 a {
+	text-decoration: none;	
+}
+
+h2 a:link { /*未訪問のリンク*/
+    color: #555;
+}
+
+h2 a:visited {/*訪問後のリンク*/
+    color: #555;
+}
+
+a {
+	text-decoration: none;	
+}
+
+#footer {
+  clear: left;
+  background-color: #f39700;
+}

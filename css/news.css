@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+#main_image {
+  background-image: url(../images/main/news_image.jpg);
+}
+*/
+
+#contents {
+	background: #fff;
+	color: #333;
+}
+
+#contents h2 {
+  font-size: 30px;
+}
+
+#contents_reservation {
+	margin: 30px 30px 30px 30px;
+	padding: 0;
+	width: 900px;
+	background: #fff;
+}
+
+#title {
+	width: 900px;
+	height: 40px;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	background: #fff;
+}
+
+#detail {
+	width: 900px;
+	padding: 0;
+	margin: 10px 0 0 0;
+	position: relative;
+	background: #fff;
+}
+
+#message {
+	width: 400px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	position: relative;
+	background: #fff;
+}
+
+.message1 {
+	width: 400px;
+	margin: 0px 0px 10px 0px;
+	padding: 0;
+	position: relative;
+	background: #fff;
+}
+
+#map {
+	width: 500px;
+	height: 430px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	position: relative;
+	background: #fff;
+}
+
+table {
+	display: table;
+	width: 100%;
+	margin: 0 0 15px;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.table-center { width: auto; margin: 0 15px 15px 15px; }
+tr {
+	border-top: 1px dotted #ccc;
+}
+table tr:first-child {
+	border-top: 0px solid #ddd;
+}
+th {
+	padding: 10px 15px 8px;
+	background: #ddd;
+	font-size: 12px;
+	text-align: left;
+}
+td {
+	padding: 7px 15px 5px;
+	color: #444;
+	background: #eee;
+}
+table tr:first-child td {
+	border-top: none;
+}
+.table-left-color tr td:first-child {
+	background: #fff;
+	text-align: center;
+	color: #555;
+}
+.em2 {
+	width: 2em;
+}
+.center {
+	width: 2em;
+	padding-left: 1em;
+	text-align: center;
+}
+.bold {
+	font-weight: bold;
+}
+.table-ul {
+	padding: 5px 10px 0 15px;
+}
+tbody {
+	display: table-row-group;
+}

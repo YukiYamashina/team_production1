@@ -1,0 +1,230 @@
+<!--
+
+file name : cafe_menu.html
+
+author    : Satoko Hata
+
+template  : Masafumi Nakao
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+    <meta name="Keywords" content="bar,cafe" />
+    <meta name="Description" content="京都の繁華街とは思えない猫の隠れ家Cafe & Bar EVE。
+    昼はCafeスタイル（11:00－15:00）、夜はBarスタイル（18:00－23:00）で、気ままに営業しています。" />
+    <title>Cafe&nbsp;&amp;&nbsp;Bar&nbsp;西洞院｜京都市中京区三条西洞院｜カフェ&nbsp;&amp;&nbsp;バー｜CAFE&nbsp;MENU</title>
+
+    <!-- 共通CSSファイルのインクルード -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <!-- 個別CSSファイルのインクルード -->
+    <link rel="stylesheet" type="text/css" href="css/cafe_menu.css"/>
+    <!-- main_imageのスライドショー用CSSファイルの読み込み -->
+    <link rel="stylesheet" type="text/css" href="css/unslider.css"/>
+
+    <!-- main_image内のスライドショー用JavaScriptの読み込み -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/unslider.min.js"></script>
+
+    <!-- headerとfooterの背景色を変更 -->
+    <script src="js/change_bg_color.js"></script>
+    <script>
+      var bgFlag = 0;
+      $(document).ready(function(){
+        setCookie();
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <div id="container"> <!-- container Division Start -->
+
+      <div id="header"> <!-- header Division Start -->
+
+        <h1 id="logo" class="header-color-cafe">
+          <a href="./top.html" title="Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー">
+            <span>Cafe & Bar EVE｜京都市中京区三条西洞院｜カフェ & バー</span>
+          </a>
+        </h1>
+
+        <div id="gnav" class="header-color-cafe"> <!-- gnav Division Start -->
+          <div id="gnav_imagetext" class="header-color-cafe"> <!-- gnav Division (All in One Image Text & mouse over) Start -->
+            <ul>
+              <li id="gnav_1_cafe_menu"><a href="cafe_menu.html">CAFE&nbsp;MENU</a></li>
+              <li id="gnav_2_bar_menu"><a href="bar_menu.html">BAR&nbsp;MENU</a></li>
+              <li id="gnav_3_reservation"><a href="reservation.html">RESERVATION</a></li>
+              <li id="gnav_4_aboutus"><a href="about_us.html">ABOUT&nbsp;US</a></li>
+              <li id="gnav_5_access"><a href="access.html">ACCESS</a></li>
+              <li id="gnav_6_news"><a href="news.html">NEWS</a></li>
+              <li id="gnav_7_members"><a href="members.html">MEMBERS</a></li>
+            </ul>
+          </div> <!-- gnav Division (All in One Image Text & mouse over) End -->
+
+          <div id="gnav_current_position" class="header-color-cafe"> <!-- gnav_current_position Division Start -->
+            <div id="gnav_current_position_1_cafe_menu"></div>
+          </div> <!-- gnav_current_position Division End -->
+
+        </div> <!-- gnav Division End -->
+
+      </div> <!-- header Division End -->
+
+      <div id="main_image_slideshow"> <!-- main_image Division Start -->
+        <ul>
+          <li style="background-image: url('images/main/cafe_main_image.jpg');"></li>
+        </ul>
+      </div> <!-- main_image Division End -->
+
+      <div id="contents"> <!-- contents Division Start -->
+
+        <div id="top_contents"> <!-- top_contents Division Start -->
+
+          <h2 class="title">
+            <p><img src="images/cafe_images/lunch_menu.png" width="301" height="49" alt="ランチメニュー" /></p>
+          </h2>
+
+          <ul class="menuPhoto-gallery">
+            <li class="menuPhoto-gallary-left"><img src="images/cafe_images/pasta-ham_03.jpg" alt="パスタ" /></li>
+            <li><img src="images/cafe_images/lazania_03.jpg" alt="ラザニア" /></li>
+            <li><img src="images/cafe_images/chickin_03.jpg" alt="チキン" /></li>
+            <li><img src="images/cafe_images/tart_03.jpg" alt="デザート" /></li>
+          </ul>
+          
+        </div> <!-- top_contents Division End -->
+        
+
+        <div id="middle_contents"> <!-- middle_contents Division Start -->
+
+          <div id="menulist_lunch_set">
+
+            <h3>
+             <img src="images/cafe_images/lunch_set.png" width="170" height="35" alt="ランチセット" />
+            </h3>
+
+            <ul>
+              <li>パン（食べ放題）＋スープ＋ミニサラダ　1,000yen</li>
+              <li class="small_font">メインはお好きなものを下記より1品お選びください。</li>
+            </ul>
+            <ul>
+              <li>ドリンクセットはプラス150yen </li> 
+              <li class="small_font" >コーヒー(HOT・ICE)　紅茶（HOT・ICE)　オレンジジュース　リンゴジュース</li>
+            </ul>
+
+            <dl class="menulist_set">
+              <dt>ホタテといんげんのジェノベーゼ</dt>
+              <dd>平うちの細麺に緑鮮やかなフレッシュのバジルソースを絡めてお召し上がり下さい。</dd>
+              <dt>生ハムのカルボナーラ</dt>
+              <dd>ゴルゴンゾーラチーズに、じっくり焼いた生ハムの旨味を加えた、深みのある味わいです。</dd>
+              <dt>バジルとトマトのパスタ</dt>
+              <dd>イタリアンらしいシンプルなソース。さっぱりとした味で、女性におすすめです！</dd>
+              <dt>ラザニア</dt>
+              <dd>ミートソースベースの人気のラザニアです。</dd>
+              <dt>ハーブチキン</dt>
+              <dd>ハーブの香りがやわらかなもも肉にしみこんで、とても豊かな美味しさです。</dd>
+            </dl>
+
+          </div> <!-- </div id=menulist_lunch_set> -->
+        </div> <!-- middle_contents Division End -->
+
+        <div id="bottom_contents"><!-- bottom_contents Division Start -->
+
+
+          <div id="menulist_Drink">
+
+            <h3>
+              <img src="images/cafe_images/drink.png" width="170" height="35" alt="ドリンク" />
+            </h3>
+             
+             <dl class="menulist">
+             
+                <dt>コーヒー(HOT・ICE)</dt>
+                <dd>450yen</dd>
+                
+                <dt>カフェラテ</dt>
+                <dd>500yen</dd>
+                
+                <dt>紅茶(HOT・ICE)</dt>
+                <dd>450yen</dd>
+               
+                <dt>ブラットオレンジ</dt>
+                <dd>450yen</dd>
+             
+                <dt>アップルジュース</dt>
+                <dd>450yen</dd>
+                
+                <dt>ジンジャエール(甘・辛)</dt>
+                <dd>450yen</dd>
+                
+                <dt>レットブル</dt>
+                <dd>500yen</dd>
+                
+                <dt>ペリエ</dt>
+                <dd>500yen</dd>
+                
+                <dt>コロナ</dt>
+                <dd>700yen</dd>
+                
+                <dt>ジーマ</dt>
+                <dd>700yen</dd>
+              </dl>     
+
+          </div><!-- </div id="menulist_Drink"> -->
+
+          <div id="menulist_Dessert">
+          
+            <h3> 
+            <img src="images/cafe_images/dessert.png" width="170" height="35" alt="デザート" />
+            </h3>
+            
+            <dl class="menulist">
+            
+              <dt>フレンチトースト　フルーツ</dt>
+                <dd>730yen</dd>
+                <dt>フレンチトースト　ハニーバナナ</dt>
+                <dd>730yen</dd>
+                <dt>生チョコオレンジタルト</dt>
+                <dd>650yen</dd>
+                <dt>ピーチタルト</dt>
+                <dd>650yen</dd>
+                <dt>チョコトースト</dt>
+                <dd>680yen</dd>
+                
+              </dl>
+           </div> <!-- </div id="menulist_Dessert"> -->
+
+        </div> <!-- bottom_contents Division End -->
+
+      </div> <!-- contents Division End -->
+ 
+
+      <div id="footer" class="footer-color-cafe">
+        <h2 id="footer_logo" class="footer-color-cafe">
+          <a href="index.html" title="Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー">
+            <span>Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー</span>
+          </a>
+        </h2>
+        <p>CAFE & BAR EVE<br />
+          京都市中京区西洞院通三条下る柳水町61<br />
+          075-111-2222<br />
+          Copyright (C) Cafe&nbsp;&amp;&nbsp;Bar&nbsp;EVE All Rights Reserved.<br />
+        </p>
+      </div>
+
+    </div> <!-- container Division End -->
+  
+    <!-- main_imageでのスライドショーのtrigger scriptの読み込み -->
+    <script src="js/unslider.trigger.js"></script>
+
+  </body>
+
+</html>

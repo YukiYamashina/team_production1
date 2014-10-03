@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+#main_image {
+  background-image: url(../images/main/about_us_image.jpg);
+}
+*/
+
+#contents {
+	background: #fff;
+}
+
+#contents_aboutus {
+	margin: 30px;
+	width: 900px;
+	background: #fff;
+}
+
+.whole {
+	border: 0;
+	padding: 0;
+	width: 900px;
+	background: #fff;
+	color: #555;
+}
+
+
+.title {
+	border: 0;
+	padding: 0;
+	width: 900px;
+	background: #fff;
+	color: #555;
+}
+
+.sub_title {
+	border: 0;
+	padding: 0;
+	width: 900px;
+	background: #fff;
+	color: #555;
+	clear: both;
+}
+
+.concept {
+    margin: 0;
+	border: 0;
+	padding: 0;
+	width: 900px;
+	background: #fff;
+	color: #555;
+	clear: both;
+}
+
+.message {
+	margin: 0 0 100px 0;
+	border: 0;
+	padding: 0;
+	float: left;
+	width: 700px;
+	background: #fff;
+	color: #555;
+}
+
+.photo {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	float: left;
+	width: 200px;
+	background: #fff;
+}
+
+.otoiawase {
+	margin: 10px;
+	width: 150px;
+	float: left;
+	background: #fff;
+	color: #555;
+	/* To see the limits of the form */
+	padding: 10px;
+	border: 4px solid #CCC;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #eee
+}
+
+.otoiawase a {
+	text-decoration: none;
+	color: #555;
+}

@@ -1,0 +1,321 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+}
+
+body　{
+  width: 960px;
+  border: #000 1px solid;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+}
+
+img {
+  border: 0;
+}
+
+#container {
+  width: 960px;
+}
+
+/******************
+  header part
+******************/
+
+#header {
+  margin: 0;
+  padding: 0;
+  width: 960px;
+  height: 80px;
+  background: #000;
+}
+
+.header-color-cafe {
+  background-color: #fff799 !important;
+}
+
+.header-color-bar {
+	background-color: #783DBE !important;
+}
+
+.footer-color-cafe {
+  background-color: #f39700 !important;
+}
+
+.footer-color-bar {
+	background-color: #2E003A !important;
+}
+
+#logo {
+  float: left;
+  height: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+#logo a {
+  display: block;
+  height: 80px;
+  overflow: visible;
+}
+
+#logo span {
+  width: 200px;
+  height: 100px;
+  display: block;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  background: url(../images/logo/logo_cafe.png) no-repeat 0 0;
+}
+
+#gnav {
+  width: 760px;
+  height: 80px;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background: #000;
+}
+
+/*
+  幅が非固定の場合のgnavi設定
+  References:
+  http://qanda.rakuten.ne.jp/qa3932907.html?rel=innerHtml
+  http://oshiete.goo.ne.jp/qa/3932907.html
+*/
+#gnav_imagetext {
+  width: 560px;
+  height: 40px;
+  list-style: none;
+/*   margin: 0; */
+  margin-top: 20px;
+  margin-left: 160px;
+  overflow: hidden;
+}
+
+#gnav_imagetext ul {
+  list-style-type: none;
+}
+
+#gnav_imagetext li {
+  float: left;
+}
+
+#gnav_imagetext li a {
+  display: block;
+/*   width: 100%; */
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+}
+
+#gnav_imagetext a:hover {
+  background-repeat: no-repeat;
+}
+
+#gnav_imagetext li a {
+  background-image: url(../images/gnav/gnav_all_cafe.png);
+}
+
+#gnav_imagetext a:hover {
+  background-image: url(../images/gnav/gnav_all_cafe.png);
+}
+
+/*
+  各文字の端の座標値
+  71  97  156  182  260  286  342  368  410  436  472  498  560
+  各数字の間隔
+  71  26  59  26  78  26  56  26  42  26  36  26  62
+  各文字の幅
+  84 85 104 82 68 62 75
+*/
+
+#gnav_1_cafe_menu   a { background-position:      0 0; width:  84px; }
+#gnav_2_bar_menu    a { background-position:  -84px 0; width:  85px; }
+#gnav_3_reservation a { background-position: -169px 0; width: 104px; }
+#gnav_4_aboutus     a { background-position: -273px 0; width:  82px; }
+#gnav_5_access      a { background-position: -355px 0; width:  68px; }
+#gnav_6_news        a { background-position: -423px 0; width:  62px; }
+#gnav_7_members     a { background-position: -489px 0; width:  75px; }
+
+#gnav_1_cafe_menu   a:hover { background-position:    0   -40px; }
+#gnav_2_bar_menu    a:hover { background-position:  -84px -40px; }
+#gnav_3_reservation a:hover { background-position: -169px -40px; }
+#gnav_4_aboutus     a:hover { background-position: -273px -40px; }
+#gnav_5_access      a:hover { background-position: -355px -40px; }
+#gnav_6_news        a:hover { background-position: -423px -40px; }
+#gnav_7_members     a:hover { background-position: -489px -40px; }
+
+#gnav_current_position {
+  width: 560px;
+  height: 20px;
+  float: left;
+  margin: 0px 40px 0 160px;
+  padding: 0;
+  background: #000;
+}
+
+#gnav_current_position_1_cafe_menu {
+  width: 67px;
+  height: 3px;
+  margin: 0px 0 17px 6px;
+  padding: 0;
+  background: #f00;
+}
+
+#gnav_current_position_2_bar_menu {
+  width: 62px;
+  height: 3px;
+  margin: 0px 0 17px 96px;
+  padding: 0;
+  background: #43ff00;
+}
+
+#gnav_current_position_3_reservation {
+  width: 80px;
+  height: 3px;
+  margin: 0px 0 17px 181px;
+  padding: 0;
+  background: #fff;
+}
+
+#gnav_current_position_4_aboutus {
+  width: 59px;
+  height: 3px;
+  margin: 0px 0 17px 285px;
+  padding: 0;
+  background: #fff;
+}
+
+#gnav_current_position_5_access {
+  width: 44px;
+  height: 3px;
+  margin: 0px 0 17px 367px;
+  padding: 0;
+  background: #fff;
+}
+
+#gnav_current_position_6_news {
+  width: 38px;
+  height: 3px;
+  margin: 0px 0 17px 435px;
+  padding: 0;
+  background: #fff;
+}
+
+#gnav_current_position_7_members {
+  width: 58px;
+  height: 3px;
+  margin: 0px 0 17px 492px;
+  padding: 0;
+  background: #fff;
+}
+
+/******************
+  main_image part
+******************/
+
+#main_image {
+  margin: 0;
+  padding: 0;
+  width: 960px;
+  height: 450px;
+  background: #777;
+  overflow: hidden;
+  background-size: 960px 450px;
+  background-repeat: no-repeat;
+}
+
+/******************
+  contents part
+******************/
+
+#contents {
+  margin: 0;
+  padding: 0;
+  width: 960px;
+  background: #fff;
+}
+
+/******************
+  footer part
+******************/
+
+#footer {
+  clear:both;
+  width: 960px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+#footer_logo {
+  float: left;
+  height: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+#footer_logo a {
+  display: block;
+  height: 80px;
+  overflow: visible;
+}
+
+#footer_logo span {
+  width: 200px;
+  height: 100px;
+  display: block;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  background: url(../images/logo/logo_footer.png) no-repeat 0 20px;
+  background-size: 70%;
+}
+
+#footer p {
+  float: right;
+  padding: 23px 10px 0 0;
+  font-size: 12px;
+  text-align: right;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/******************
+  clearfix
+******************/
+
+.clearfix: before,
+.clearfix: after {
+  content: " ";
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.clearfix {
+  min-height: 1px;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* Hides from IE-mac */
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* End hide from IE-mac */

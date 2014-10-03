@@ -1,0 +1,251 @@
+<!--
+
+file name : top.html
+
+author    : Masafumi Nakao
+
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+    <meta name="Keywords" content="bar,cafe" />
+    <meta name="Description" content="京都の繁華街とは思えない猫の隠れ家Cafe & Bar EVE。
+    昼はCafeスタイル（11:00－15:00）、夜はBarスタイル（18:00－23:00）で、気ままに営業しています。" />
+    <title>Cafe&nbsp;&amp;&nbsp;Bar&nbsp;EVE｜京都市中京区三条西洞院｜カフェ&nbsp;&amp;&nbsp;バー｜CAFE&nbsp;MENU</title>
+
+    <!-- 共通CSSファイルのインクルード -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <!-- 個別CSSファイルのインクルード -->
+    <link rel="stylesheet" type="text/css" href="css/top.css"/>
+    <!-- main_imageのスライドショー用CSSファイルの読み込み -->
+    <link rel="stylesheet" type="text/css" href="css/unslider.css"/>
+
+    <!-- main_image内のスライドショー用JavaScriptの読み込み -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/unslider.min.js"></script>
+
+    <!-- headerとfooterの背景色を変更 -->
+    <script src="js/change_bg_color.js"></script>
+    <script>
+      $(document).ready(function(){
+        bgFlag = getCookie();
+        changeBgColor();
+      });
+    </script>
+
+    <!-- show end credits (implemented with "cheet.min.js") -->
+    <script src="js/endcredits.js"></script>
+    <link rel="stylesheet" href="css/endcredits.css">
+
+    <!-- page transition with hidden commands -->
+    <script src="js/cheet.min.js"></script>
+    <script>
+      // goto change history page
+      cheet('c h a n g e', function () {
+        document.location = "change.html";
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <div id="container"> <!-- container Division Start -->
+
+      <div id="header"> <!-- header Division Start -->
+
+        <h1 id="logo" class="header-color-cafe">
+          <a href="./top.html" title="Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー"><span>Cafe & Bar EVE｜京都市中京区三条西洞院｜カフェ & バー</span>
+          </a>
+        </h1>
+
+        <div id="gnav" class="header-color-cafe"> <!-- gnav Division Start -->
+          <div id="gnav_imagetext" class="header-color-cafe"> <!-- gnav Division (All in One Image Text & mouse over) Start -->
+            <ul>
+              <li id="gnav_1_cafe_menu"><a href="cafe_menu.html">CAFE&nbsp;MENU</a></li>
+              <li id="gnav_2_bar_menu"><a href="bar_menu.html">BAR&nbsp;MENU</a></li>
+              <li id="gnav_3_reservation"><a href="reservation.html">RESERVATION</a></li>
+              <li id="gnav_4_aboutus"><a href="about_us.html">ABOUT&nbsp;US</a></li>
+              <li id="gnav_5_access"><a href="access.html">ACCESS</a></li>
+              <li id="gnav_6_news"><a href="news.html">NEWS</a></li>
+              <li id="gnav_7_members"><a href="members.html">MEMBERS</a></li>
+            </ul>
+          </div> <!-- gnav Division (All in One Image Text & mouse over) End -->
+
+<!--
+          <div id="gnav_current_position" class="header-color-cafe">
+            <div id="gnav_current_position_1_cafe_menu"></div>
+          </div>
+-->
+
+        </div> <!-- gnav Division End -->
+
+      </div> <!-- header Division End -->
+
+      <div id="main_image_slideshow"> <!-- main_image Division Start -->
+        <ul>
+          <li style="background-image: url('images/main/top_image_1.jpg');"></li>
+          <li style="background-image: url('images/main/top_image_2.jpg');"></li>
+          <li style="background-image: url('images/main/bar_main_image.jpg');"></li>
+          <li style="background-image: url('images/main/top_image_3.jpg');"></li>
+          <li style="background-image: url('images/main/cafe_main_image.jpg');"></li>
+          <li style="background-image: url('images/main/top_image_4.jpg');"></li>
+        </ul>
+      </div> <!-- main_image Division End -->
+
+      <div id="contents">
+
+        <div id="left-contents">
+
+          <div id="recommended-menu" class="contents-text">
+            <h2>RECOMMENDATION MENU</h2>
+            <div id="left-contents-cafemenu">
+              <a href="./cafe_menu.html"><img src="images/cafe_images/pasta-ham_03.jpg" width="245" alt="パスタ" />
+              パン（食べ放題）＋スープ＋ミニサラダ<br />1,000yen</a>
+            </div>
+            <div id="left-contents-barmenu">
+              <a href="./bar_menu.html"><img src="images/bar_images/DINNER_photo_11.jpg" width="245" alt="シレーニ" />
+              赤ワイン「シレーニ」<br />ボトル：3,500yen</a>
+            </div>
+          </div>
+
+          <div id="top-news" class="contents-text">
+            <h2><a href="./news.html">NEWS</a></h2>
+            <dl>
+              <dt>2014.7.20 BAR</dt>
+              <dd><a href="./news.html">宵宮イベント開催します。</a></dd>
+              <dt>2014.7.10 CAFE</dt>
+              <dd><a href="./news.html">夏メニュー始めます。</a></dd>
+              <dt>2014.7.7 BAR</dt>
+              <dd><a href="./news.html">七夕イベント開催します。</a></dd>
+            </dl>
+          </div>
+
+        </div>
+
+        <div id="right-contents">
+
+          <div id="access" class="contents-text">
+            <h2><a href="./access.html">ACCESS</a></h2>
+            <div id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1633.9639997630636!2d135.75494420101523!3d35.0085074400755!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1404975488988" width="310" height="310" frameborder="0" style="border:0"></iframe>
+            </div>
+          </div>
+
+<!--
+          <div id="twitter" class="contents-text">
+            <h2>TWITTER</h2>
+            <a href="#creditos" name="creditos">
+                here is a twitter icon
+            </a>
+          </div>
+-->
+
+        </div>
+
+      </div>
+
+      <div id="footer">
+        <h2 id="footer_logo">
+          <a href="index.html" title="Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー">
+            <span>Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー</span>
+          </a>
+        </h2>
+        <p>
+          <a href="#creditos" name="creditos">&nbsp;&nbsp;</a>
+          CAFE & BAR EVE<br />
+          京都市中京区西洞院通三条下る柳水町61<br />
+          075-111-2222<br />
+          Copyright (C) Cafe&nbsp;&amp;&nbsp;Bar&nbsp;EVE All Rights Reserved.<br />
+        </p>
+      </div>
+
+      
+    </div> <!-- container Division End -->
+  
+    <!-- start of credits -->
+    <div id="titles">
+        <div id="credits">
+            <div id="the-end">"CAFE & BAR EVE"<br />Web Site made by</div>
+            <br />
+            <h2>Wire Frame</h2>
+            <dl>
+                <dt>Creative</dt>
+                <dd>Satoko Hata</dd>
+                <dt>Creative</dt>
+                <dd>Yuka Yamauchi</dd>
+                <dt>Creative</dt>
+                <dd>Takeshi Morino</dd>
+                <dt>Creative</dt>
+                <dd>Yoshiyuki Nakagawa</dd>
+                <dt>Creative/Directive</dt>
+                <dd>Masafumi Nakao</dd>
+            </dl>
+            <h2>Site Design</h2>
+            <dl>
+                <dt>Creative</dt>
+                <dd>Satoko Hata</dd>
+                <dt>Creative</dt>
+                <dd>Yuka Yamauchi</dd>
+                <dt>Creative</dt>
+                <dd>Takeshi Morino</dd>
+                <dt>Creative</dt>
+                <dd>Yoshiyuki Nakagawa</dd>
+                <dt>Creative/Directive</dt>
+                <dd>Masafumi Nakao</dd>
+            </dl>
+            <h2>Coding</h2>
+            <dl>
+                <dt>Cafe Menu Page</dt>
+                <dd>Satoko Hata</dd>
+                <dt>Bar Menu Page</dt>
+                <dd>Yuka Yamauchi</dd>
+                <dt>About Us page</dt>
+                <dd>Takeshi Morino</dd>
+                <dt>Top Page</dt>
+                <dd>Yoshiyuki Nakagawa</dd>
+                <dt>Rest of Pages and common CSS</dt>
+                <dd>Masafumi Nakao</dd>
+            </dl>
+            <h2>Special Thanks</h2>
+            <p>All the members of Web creator school</p>
+            <div class="clearfix"></div>
+            <h2>Special Thanks</h2>
+            <p>Taisuke Matsushita, Seiji Nakamura</p>
+            <div class="clearfix"></div>
+            <h2>Developed using</h2>
+            <p>
+              <img src="images/endcredits/logo_ps_bw.jpg">
+              <img src="images/endcredits/logo_dw_bw.jpg">
+              <img src="images/endcredits/logo_coda_bw.png">
+            </p>
+            <div class="clearfix"></div>
+            <div class="fineprint">
+              All trademarks are the property of the trademark owners.
+              <br>Copyright (C) Team Nakao All Rights Reserved.
+              <br>Thanks for all of attentions!
+            </div>
+            <div class="last-comment">
+              (*´∇｀*)ｵﾂｶﾚｻﾏー
+            </div>
+            <div class="clearfix"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+  
+    </div><!-- end of credits -->
+
+    <!-- main_imageでのスライドショーのtrigger scriptの読み込み -->
+    <script src="js/unslider.trigger.js"></script>
+
+  </body>
+
+</html>

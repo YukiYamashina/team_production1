@@ -1,0 +1,124 @@
+<!--
+
+file name : reservation.html
+
+author    : Masafumi Nakao
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+    <meta name="Keywords" content="bar,cafe" />
+    <meta name="Description" content="京都の繁華街とは思えない猫の隠れ家Cafe & Bar EVE。
+    昼はCafeスタイル（11:00－15:00）、夜はBarスタイル（18:00－23:00）で、気ままに営業しています。" />
+    <title>Cafe&nbsp;&amp;&nbsp;Bar&nbsp;EVE｜京都市中京区三条西洞院｜カフェ&nbsp;&amp;&nbsp;バー｜RESERVATION</title>
+
+    <!-- 共通CSSファイルのインクルード -->
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <!-- 個別CSSファイルのインクルード -->
+    <link rel="stylesheet" type="text/css" href="css/reservation.css"/>
+    <!-- main_imageのスライドショー用CSSファイルの読み込み -->
+    <link rel="stylesheet" type="text/css" href="css/unslider.css"/>
+
+    <!-- main_image内のスライドショー用JavaScriptの読み込み -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/unslider.min.js"></script>
+
+    <!-- headerとfooterの背景色を変更 -->
+    <script src="js/change_bg_color.js"></script>
+    <script>
+      $(document).ready(function(){
+        bgFlag = getCookie();
+        changeBgColor();
+      });
+    </script>
+
+  </head>
+
+  <body>
+
+    <div id="container"> <!-- container Division Start -->
+
+      <div id="header"> <!-- header Division Start -->
+
+        <h1 id="logo">
+          <a href="./top.html" title="Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー"><span>Cafe & Bar EVE｜京都市中京区三条西洞院｜カフェ & バー</span>
+          </a>
+        </h1>
+
+        <div id="gnav"> <!-- gnav Division Start -->
+          <div id="gnav_imagetext"> <!-- gnav Division (All in One Image Text & mouse over) Start -->
+            <ul>
+              <li id="gnav_1_cafe_menu"><a href="cafe_menu.html">CAFE&nbsp;MENU</a></li>
+              <li id="gnav_2_bar_menu"><a href="bar_menu.html">BAR&nbsp;MENU</a></li>
+              <li id="gnav_3_reservation"><a href="reservation.html">RESERVATION</a></li>
+              <li id="gnav_4_aboutus"><a href="about_us.html">ABOUT&nbsp;US</a></li>
+              <li id="gnav_5_access"><a href="access.html">ACCESS</a></li>
+              <li id="gnav_6_news"><a href="news.html">NEWS</a></li>
+              <li id="gnav_7_members"><a href="members.html">MEMBERS</a></li>
+            </ul>
+          </div> <!-- gnav Division (All in One Image Text & mouse over) End -->
+          <div id="gnav_current_position"> <!-- gnav_current_position Division Start -->
+            <div id="gnav_current_position_3_reservation"></div>
+          </div> <!-- gnav_current_position Division End -->
+        </div> <!-- gnav Division End -->
+
+      </div> <!-- header Division End -->
+
+      <div id="main_image_slideshow"> <!-- main_image Division Start -->
+        <ul>
+          <li style="background-image: url('images/main/reservation_image.jpg');"></li>
+        </ul>
+      </div> <!-- main_image Division End -->
+
+      <div id="contents"> <!-- contents Division Start -->
+        
+        <div id="contents_reservation"> <!-- contents_reservation Division Start -->
+          <div id="title">
+           <h2>RESERVATION</h2>
+          </div>
+          <div id="detail">
+            <div id="message">
+          
+              <p>当店のご利用に際しましては、以下のカレンダーからご予約頂くことが可能です。
+              なお、予約のキャンセルは、当店に直接お電話下さいますようにお願い致します。</p>
+              <br />
+              <p>電話番号：075-111-2222</p>
+            </div>
+            <div id="calender">
+              <iframe src="http://porc.coolk2.com/?g=53be0249b0023" frameborder="0" style="width:480px;height:600px;border:0px solid #ccc; text-decoration: none;"></iframe>
+            </div>
+          </div>
+        </div> <!-- contents_reservation Division End -->
+        </div> <!-- contents Division End -->
+
+      <div id="footer">
+        <h2 id="footer_logo">
+          <a href="index.html" title="Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー">
+            <span>Cafe & Bar 西洞院｜京都市中京区三条西洞院｜カフェ & バー</span>
+          </a>
+        </h2>
+        <p>CAFE & BAR EVE<br />
+          京都市中京区西洞院通三条下る柳水町61<br />
+          075-111-2222<br />
+          Copyright (C) Cafe&nbsp;&amp;&nbsp;Bar&nbsp;EVE All Rights Reserved.<br />
+        </p>
+      </div>
+
+    </div> <!-- container Division End -->
+
+    <!-- main_imageでのスライドショーのtrigger scriptの読み込み -->
+    <script src="js/unslider.trigger.js"></script>
+
+  </body>
+
+</html>

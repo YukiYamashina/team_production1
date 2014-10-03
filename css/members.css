@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+#main_image {
+  background-image: url(../images/main/members_image.jpg);
+}
+*/
+
+#contents {
+  background: #fff;
+  line-height: 1.4;
+  color: #333;
+}
+
+#contents h2 {
+  font-size: 30px;
+}
+
+#contents h3 {
+  font-size: 24px;
+}
+
+#contents_members {
+	margin: 30px 30px 30px 30px;
+	padding: 0;
+	width: 900px;
+	background: #fff;
+}
+
+#title {
+	width: 900px;
+	padding: 0;
+	margin: 0 0 10px 0;
+/*   margin: 0; */
+	background: #fff;
+/* 	color: #555; */
+}
+
+.sub_title {
+	width: 900px;
+	padding: 0;
+	margin: 0 0 10px 0;
+/*   margin: 0; */
+	background: #fff;
+/* 	color: #555; */
+	clear: both;
+}
+	
+.detail {
+	width: 900px;
+	padding: 0;
+	margin: 0 0 100px 0;
+	background: #fff;
+/* 	color: #555; */
+	clear: both;
+}
+
+.message {
+	width: 400px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	background: #fff;
+/* 	color: #777; */
+  color: #555;
+}
+
+.login_form {
+	width: 500px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	background: #fff;
+/* 	color: #555; */
+}
+
+.button_box {
+	width: 500px;
+	margin: 0;
+	float: left;
+	background: #fff;
+/* 	color: #555; */
+}
+
+.button_box_forget {
+	margin: 0px 0px 0px 36px;
+	width: 250px;
+	float: left;
+	background: #fff;
+	/* To see the limits of the form */
+	padding: 10px;
+	border: 4px solid #CCC;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.button_box_forget a {
+	text-decoration: none;
+}
+
+.button_box_new_member {
+	margin: 0px 0px 0px 36px;
+	width: 250px;
+	float: left;
+	background: #fff;
+	/* To see the limits of the form */
+	padding: 10px;
+	border: 4px solid #CCC;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button_box_new_member a {
+	text-decoration: none;
+}
+
+form {
+	/* Just to center the form on the page */
+	margin: 0 auto;
+	width: 400px;
+
+	/* To see the limits of the form */
+	padding: 10px;
+	border: 4px solid #CCC;
+	border-radius: 5px;
+}
+
+div + div {
+/* 	margin-top: 3px; */
+}
+
+label {
+	/* To make sure that all label have the same size and are properly align */
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+}
+
+input, textarea {
+	/* To make sure that all text field have the same font settings
+	 By default, textarea are set with a monospace font */
+	font: 15px sans-serif;
+
+	/* To give the same size to all text field */
+	width: 200px;
+
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	/* To harmonize the look & feel of text field border */
+	border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+	/* To give a little highligh on active elements */
+	border-color: #000;
+}
+
+textarea {
+	/* To properly align multiline text field with their label */
+	vertical-align: top;
+
+	/* To give enough room to type some text */
+	height: 15px;
+
+	/* To allow users to resize any textarea vertically
+	   It works only on Chrome, Firefox and Safari */
+	resize: vertical;
+}
+
+.button {
+	/* To position the buttons to the same position of the text fields */
+	padding-left: 100px; /* same size as the label elements */
+}
+
+button {
+  /* This extra magin represent the same space as the space between
+     the labels and their text fields */
+/* 	margin-left: 100px; */
+}
